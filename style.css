@@ -10,6 +10,19 @@
 .search-btn{
     background-color: #F06C4E;
     color: #fff;
+    font-size: 25px;
+}
+.search-field i{
+    font-size: 25px;
+    position: relative;
+    top: 22px;
+    left: 165px;
+}
+.search-field input{
+    border: none;
+    font-size: 25px;
+    text-align: center;
+    outline: none;
 }
 #popupId .card{
     border: none;
