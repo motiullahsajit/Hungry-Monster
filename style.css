@@ -39,9 +39,6 @@
     z-index:1;
     display:none;
 }
-#popUp-Content-Id img{
-    width: 100%;
-}
 .popUpCls .popUp-Content-class li i{
     color: #F06C4E;
 }
