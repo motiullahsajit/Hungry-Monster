@@ -75,7 +75,7 @@ const detailsPopUp = mealId => {
         .catch(error => {
             const errorPopuUp = document.getElementById('popUp-Content-Id');
             errorPopuUp.innerHTML = `<div class"p-3">
-            <button class="close-btn" onclick="togglePopup()"><i class="far fa-times-circle"></i></button>
+            <button class="close-btn" onclick="detailsPopUp()"><i class="far fa-times-circle"></i></button>
             <h2 class="text-danger text-center pt-5">Sorry failed to load data !!</h2>
             <h5 class="text-danger text-center pb-5">Please try again after some time</h5>
             </div>
