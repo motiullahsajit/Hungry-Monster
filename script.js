@@ -11,16 +11,14 @@ const showBySearch = () => {
             }
             else {
                 const collectionOfMeals = document.getElementById('meals-collection');
-                const noResult = `<h1 class="text-danger p-2">No Result Found !!</h1>`;
-                collectionOfMeals.innerHTML = noResult;
+                collectionOfMeals.innerHTML = `<h1 class="text-danger p-2">No Result Found !!</h1>`;
                 const searchInput = document.getElementById('search-input');
                 searchInput.value = '';
             }
         })
         .catch(error => {
             const collectionOfMeals = document.getElementById('meals-collection');
-            const errorText = `<h1 class="text-danger p-2">Sorry failed to load data !!</h1>`;
-            collectionOfMeals.innerHTML = errorText;
+            collectionOfMeals.innerHTML = `<h1 class="text-danger p-2">Sorry failed to load data !!</h1>`;
             const searchInput = document.getElementById('search-input');
             searchInput.value = '';
         });
