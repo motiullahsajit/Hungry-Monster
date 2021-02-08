@@ -31,7 +31,7 @@ const getMealDiv = mealItem => {
     mealItem.forEach(meal => {
         const mealDiv = document.createElement('div');
         mealDiv.className = 'col-lg-3 col-md-6 col-sm-12';
-        const mealCard = `
+        mealDiv.innerHTML = `
             <div class="card" onClick="detailsPopUp(${meal.idMeal})">
                 <img src="${meal.strMealThumb}" alt="${meal.strMeal}">
             <div class="card-body">
@@ -39,7 +39,6 @@ const getMealDiv = mealItem => {
             </div>
              </div>
             `;
-        mealDiv.innerHTML = mealCard;
         collectionOfMeals.appendChild(mealDiv);
     });
 };
@@ -52,8 +51,8 @@ const detailsPopUp = mealId => {
         .then(res => res.json())
         .then(data => {
             const meal = data.meals[0];
-            const detailsPopuUp = document.getElementById('popUp-Content-Id');
-            detailsPopuUp.innerHTML = `
+            const displayDetails = document.getElementById('popUp-Content-Id');
+            displayDetails.innerHTML = `
             <button class="close-btn" onclick="detailsPopUp()"><i class="far fa-times-circle"></i></button>
             <div class="card p-3">
                 <img src="${meal.strMealThumb}">
