@@ -1,7 +1,8 @@
-*{
+body{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    background-color: rgb(250, 236, 217);
 }
 .navbar ul li{
     font-size: 20px;
@@ -15,30 +16,23 @@
 .search-field i{
     font-size: 25px;
     position: relative;
-    top: 22px;
-    left: 165px;
+    top: 1.4rem;
+    left: 10%;
 }
 .search-field input{
     border: none;
-    font-size: 25px;
+    font-size: 1.6rem;
     text-align: center;
     outline: none;
 }
-#popupId .card{
+#meals-collection .card{
     border: none;
+    border-radius: 10px;
+    background-color: #ead19a;
+    color: #fff;
 }
-#popupId img{
-    border-radius: 10px 10px 0px 0px;
-}
-#popupId .card a{
-    text-decoration: none;
-    color: #4b4646;
-    font-size: 25px;
-}
-#collectionOfMeal .card{
-    border: none;
-}
-#collectionOfMeal img{
+#meals-collection img{
+    width: 100%;
     border-radius: 10px 10px 0px 0px;
 }
 /* popup */
@@ -63,19 +57,17 @@
     top:50%;
     left:50%;
     transform:translate(-50%,-50%) scale(0);
-    background:#fff;
-    width:500px;
+    width:450px;
     z-index:2;
-    padding:20px;
     box-sizing:border-box;
-    border-radius: 10px;
-    color: rgb(92, 91, 91);
+    background-color: #fff;
+    border-radius: 15px;
 }
 .popUpCls .close-btn {
     cursor:pointer;
     position:absolute;
-    right:20px;
-    top:20px;
+    right:10px;
+    top:15px;
     margin-left: 90%;
     outline: none;
     font-size:35px;
@@ -93,4 +85,18 @@
 .popUpCls.active .popUp-Content-class {
     transition:all 300ms ease-in-out;
     transform:translate(-50%,-50%) scale(1);
+}
+#popUpId .card{
+    border: none;
+    border-radius: 15px;
+}
+#popUpId img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px 10px 0px 0px;
+}
+#popUpId .card a{
+    text-decoration: none;
+    color: #F06C4E;
+    font-size: 25px;
 }
