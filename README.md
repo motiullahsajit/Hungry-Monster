@@ -1,4 +1,4 @@
-# Hungry-Monster
+# [Hungry-Monster](https://motiullahsajit.github.io/Hungry-Monster/) 
 ## Details 
 * This is food website. you can search your fvrt food by searching...
 * check API link : [API LINK](https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata)
@@ -20,4 +20,4 @@
 [CLICK ME](https://motiullahsajit.github.io/Hungry-Monster/)
 
 ## Let's take a look!
-![hungry-monster](images/site.jpg)
+![hungry-monster](images/site.png)
